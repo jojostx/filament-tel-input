@@ -2,9 +2,9 @@
 
 namespace Jojostx\FilamentTelInput;
 
+use Jojostx\FilamentTelInput\Commands\FilamentTelInputCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Jojostx\FilamentTelInput\Commands\FilamentTelInputCommand;
 
 class FilamentTelInputServiceProvider extends PackageServiceProvider
 {
