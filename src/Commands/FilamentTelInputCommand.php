@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Jojostx\FilamentTelInput\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentTelInputCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-tel-input';
 
     public $description = 'My command';
 
