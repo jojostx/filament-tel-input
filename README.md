@@ -1,6 +1,3 @@
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
-
 # A FilamentPHP form plugin for working with phone numbers
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jojostx/filament-tel-input.svg?style=flat-square)](https://packagist.org/packages/jojostx/filament-tel-input)
@@ -10,13 +7,7 @@
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/filament-tel-input.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/filament-tel-input)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+<img width="1863" alt="image" src="https://user-images.githubusercontent.com/604907/160436321-9ff47bb8-28a2-45af-98fe-a57802236178.png">
 
 ## Installation
 
@@ -26,37 +17,28 @@ You can install the package via composer:
 composer require jojostx/filament-tel-input
 ```
 
-You can publish and run the migrations with:
+Publish the flags using
 
 ```bash
-php artisan vendor:publish --tag="filament-tel-input-migrations"
-php artisan migrate
+php artisan vendor:publish --tag="filament-tel-input-flags"
 ```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-tel-input-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-tel-input-views"
-```
+This command will publish the filament-tel-input flags images
 
 ## Usage
 
 ```php
-$filamentTelInput = new Jojostx\FilamentTelInput();
-echo $filamentTelInput->echoPhrase('Hello, Jojostx!');
+[
+    \Jojostx\FilamentTelInput\Forms\FilamentTelInput::make('phone_number');
+]
+```
+
+## Options
+```php
+[
+    \InvadersXX\FilamentJsoneditor\Forms\JSONEditor::make('editor')
+        ->height(500) // Set height to 500px, default is 300
+        ->modes(['code', 'form', 'text', 'tree', 'view', 'preview']); // default is ['code', 'form', 'text', 'tree', 'view', 'preview']
+]
 ```
 
 ## Testing
@@ -79,9 +61,16 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Jojostx](https://github.com/jojostx)
-- [All Contributors](../../contributors)
+-   [Jojostx](https://github.com/jojostx)
+-   [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+
+* :selectedCountryPlaceholder ["0803 408 1360"]
+* :selectedCountryData.name ["Nigeria"]
+* :selectedCountryData.iso2 ["NG"]
+* :selectedCountryData.dialcode ["234"]
+

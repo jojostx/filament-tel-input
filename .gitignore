@@ -12,3 +12,6 @@ testbench.yaml
 vendor
 node_modules
 .php-cs-fixer.cache
+tailwind.config.js
+webpack.mix.js
+clipboard.txt
