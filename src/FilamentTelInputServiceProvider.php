@@ -30,7 +30,7 @@ class FilamentTelInputServiceProvider extends PluginServiceProvider
 
     protected function bootPublishing()
     {
-        if (!$this->app->runningInConsole()) {
+        if (! $this->app->runningInConsole()) {
             return;
         }
 
